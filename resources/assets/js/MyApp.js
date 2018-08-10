@@ -43,7 +43,7 @@ class MyApp extends Component {
             <div className="luxbar-menu luxbar-menu-right luxbar-menu-material-bluegrey" style={styles.header}>
               <ul className="luxbar-navigation">
                   <li className="luxbar-header">
-                    <a href="#" className="luxbar-brand"><small>{name + " " + surname}</small></a>
+                  <Link to="/" className="luxbar-brand">{name + " " + surname}</Link>
                     <label className="luxbar-hamburger luxbar-hamburger-doublespin"
                       id="luxbar-hamburger" htmlFor="luxbar-checkbox"> <span></span>
                     </label>

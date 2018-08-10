@@ -7,6 +7,7 @@ import styled from "styled-components";
 import {Animated} from "react-animated-css";
 //images
 import background from '../images/background.jpg';
+import laravel from '../images/laravel.png';
 
 //inline styles
 const styles = {
@@ -56,6 +57,15 @@ const CardCol = styled(Col)`
   padding : 2em;
 `;
 
+const NonStyledA = styled.a`
+  text-decoration: none;
+  color:black;
+
+  &:hover {
+    text-decoration: none;
+    color:gray;
+  }
+`;
 
 const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","tada","wobble","jello","bounceIn","bounceInDown","bounceInLeft","bounceInRight","bounceInUp","bounceInUp","fadeIn","fadeInDown","flipInX","flipInY","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
@@ -70,32 +80,36 @@ export function Blog() {
               <StyledH2>Blog</StyledH2>
             </StyledCardTop>
             <Row style={{ paddingRight:"20px" }}>
-              <CardCol xs="12" sm="12" md="6">
+            <CardCol xs="12" sm="12" md="6">
               <time datetime="2014-09-20" class="icon">
-                <em>Saturday</em>
-                <strong>September</strong>
-                <span style={{ paddingTop:"15px" }}>20</span>
+                <em>2018</em>
+                <strong>July</strong>
+                <span style={{ paddingTop:"15px" }}>10</span>
               </time>
               <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <NonStyledA href="https://medium.com/@hayreddintuzel/how-to-learn-laravel-a-roadmap-from-beginner-to-advanced-5414640362e8" target="_blank">
+                <CardImg top width="100%" src={laravel} alt="Card image cap" />
                 <CardBody style={{ textAlign:"center" }}>
-                  <CardTitle>React</CardTitle>
-                  <CardSubtitle>How can I use Styled Components on my React App.</CardSubtitle>
+                  <CardTitle>Laravel</CardTitle>
+                  <CardSubtitle>How to Learn Laravel— A roadmap from beginner to advanced</CardSubtitle>
                 </CardBody>
+                </NonStyledA>
               </Card>
               </CardCol>
               <CardCol xs="12" sm="12" md="6">
               <time datetime="2014-09-20" class="icon">
-                <em>Saturday</em>
-                <strong>September</strong>
-                <span style={{ paddingTop:"15px" }}>20</span>
+                <em>2018</em>
+                <strong>June</strong>
+                <span style={{ paddingTop:"15px" }}>01</span>
               </time>
               <Card>
-                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                <NonStyledA href="https://medium.com/@hayreddintuzel/connecting-laravel-forge-using-heidisql-via-ssh-206febea714f" target="_blank">
+                <CardImg top width="100%" src={laravel} alt="Card image cap" />
                 <CardBody style={{ textAlign:"center" }}>
-                  <CardTitle>React</CardTitle>
-                  <CardSubtitle>How can I use Styled Components on my React App.</CardSubtitle>
+                  <CardTitle>Laravel</CardTitle>
+                  <CardSubtitle>Connecting Laravel Forge Using HeidiSQL via SSH</CardSubtitle>
                 </CardBody>
+                </NonStyledA>
               </Card>
               </CardCol>
             </Row>

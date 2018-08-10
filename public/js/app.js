@@ -68828,13 +68828,9 @@ var MyApp = function (_Component) {
                   'li',
                   { className: 'luxbar-header' },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { href: '#', className: 'luxbar-brand' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      'small',
-                      null,
-                      name + " " + surname
-                    )
+                    __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+                    { to: '/', className: 'luxbar-brand' },
+                    name + " " + surname
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'label',
@@ -77964,9 +77960,12 @@ module.exports = throttle;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_background_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_laravel_png__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_laravel_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_laravel_png__);
 var _templateObject = _taggedTemplateLiteral(['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n'], ['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  margin-top: 5px;\n  padding : 2em;\n'], ['\n  margin-top: 5px;\n  padding : 2em;\n']);
+    _templateObject3 = _taggedTemplateLiteral(['\n  margin-top: 5px;\n  padding : 2em;\n'], ['\n  margin-top: 5px;\n  padding : 2em;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  text-decoration: none;\n  color:black;\n\n  &:hover {\n    text-decoration: none;\n    color:gray;\n  }\n'], ['\n  text-decoration: none;\n  color:black;\n\n  &:hover {\n    text-decoration: none;\n    color:gray;\n  }\n']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -77977,6 +77976,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 //Animations
 
 //images
+
 
 
 //inline styles
@@ -78007,6 +78007,8 @@ var StyledCardTop = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /
 var StyledH2 = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].h2(_templateObject2);
 
 var CardCol = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* Col */])(_templateObject3);
+
+var NonStyledA = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject4);
 
 var animation = ["bounce", "pulse", "rubberBand", "shake", "headShake", "swing", "tada", "wobble", "jello", "bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceInUp", "fadeIn", "fadeInDown", "flipInX", "flipInY", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp"];
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
@@ -78043,35 +78045,39 @@ function Blog() {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'em',
                 null,
-                'Saturday'
+                '2018'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'strong',
                 null,
-                'September'
+                'July'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'span',
                 { style: { paddingTop: "15px" } },
-                '20'
+                '10'
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardImg */], { top: true, width: '100%', src: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180', alt: 'Card image cap' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardBody */],
-                { style: { textAlign: "center" } },
+                NonStyledA,
+                { href: 'https://medium.com/@hayreddintuzel/how-to-learn-laravel-a-roadmap-from-beginner-to-advanced-5414640362e8', target: '_blank' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardImg */], { top: true, width: '100%', src: __WEBPACK_IMPORTED_MODULE_5__images_laravel_png___default.a, alt: 'Card image cap' }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* CardTitle */],
-                  null,
-                  'React'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardSubtitle */],
-                  null,
-                  'How can I use Styled Components on my React App.'
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardBody */],
+                  { style: { textAlign: "center" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* CardTitle */],
+                    null,
+                    'Laravel'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardSubtitle */],
+                    null,
+                    'How to Learn Laravel\u2014 A roadmap from beginner to advanced'
+                  )
                 )
               )
             )
@@ -78085,35 +78091,39 @@ function Blog() {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'em',
                 null,
-                'Saturday'
+                '2018'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'strong',
                 null,
-                'September'
+                'June'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'span',
                 { style: { paddingTop: "15px" } },
-                '20'
+                '01'
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardImg */], { top: true, width: '100%', src: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180', alt: 'Card image cap' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardBody */],
-                { style: { textAlign: "center" } },
+                NonStyledA,
+                { href: 'https://medium.com/@hayreddintuzel/connecting-laravel-forge-using-heidisql-via-ssh-206febea714f', target: '_blank' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardImg */], { top: true, width: '100%', src: __WEBPACK_IMPORTED_MODULE_5__images_laravel_png___default.a, alt: 'Card image cap' }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* CardTitle */],
-                  null,
-                  'React'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardSubtitle */],
-                  null,
-                  'How can I use Styled Components on my React App.'
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardBody */],
+                  { style: { textAlign: "center" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* CardTitle */],
+                    null,
+                    'Laravel'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardSubtitle */],
+                    null,
+                    'Connecting Laravel Forge Using HeidiSQL via SSH'
+                  )
                 )
               )
             )
@@ -79037,6 +79047,12 @@ module.exports = "/images/services3.svg?f26b0e01f08f37fa0b70be60fd97ca87";
 /***/ (function(module, exports) {
 
 module.exports = "/images/services4.svg?90f1321e324dc29c885a2d2eb43bbfe1";
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/laravel.png?e880ac122a5b4b9a0ca75673970bca1d";
 
 /***/ })
 /******/ ]);
