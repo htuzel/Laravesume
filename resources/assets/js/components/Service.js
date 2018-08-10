@@ -7,10 +7,10 @@ import styled from "styled-components";
 import {Animated} from "react-animated-css";
 //images
 import background from '../images/background.jpg';
-import webDesign from '../images/web_design.svg';
-import coding from '../images/coding.svg';
-import seo from '../images/seo.svg';
-import marketing from '../images/marketing.svg';
+import webDesign from '../images/services1.svg';
+import coding from '../images/services2.svg';
+import seo from '../images/services3.svg';
+import marketing from '../images/services4.svg';
 import turacoon from '../images/turacoon.svg';
 import createtolearn from '../images/createtolearn.svg';
 import wantYou from '../images/wantYou.svg';
@@ -81,6 +81,8 @@ const ImageContainer = styled.div`
   margin: 0 auto;
   text-align: center;
   padding: 5px;
+  padding-top: 15px;
+
 `;
 
 const ServiceCard = styled.div`
@@ -163,7 +165,7 @@ var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
 export function Service () {
-    
+
   return (
       <Animated animationIn={rand1} animationOut={rand2} isVisible={true}>
         <Container fluid={true}>

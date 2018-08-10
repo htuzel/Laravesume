@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button} from 'reactstrap';
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+
 
 
 import styled from "styled-components";
@@ -125,7 +127,25 @@ const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","ta
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
-export function Contact() {
+export class Contact extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    };
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+
+  render () {
   return (
     <Animated animationIn={rand1} animationOut={rand2} isVisible={true}>
         <Container fluid={true}>
@@ -136,53 +156,84 @@ export function Contact() {
             <StyledCardTitle><span style={{ color:"gray" }}>Get in</span> <span>Touch</span></StyledCardTitle>
             <Row style={{ paddingRight:"20px" }}>
               <CardCol xs="12" sm="12" md="6" >
-              <ul style={{ paddingLeft:"0px" }}>
+                           <ul style={{ paddingLeft:"0px"}}>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="far fa-envelope"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="mailto:hayreddintuzel@gmail.com?"><i className="far fa-envelope"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Email</ContactItemKey>
                   <ContactItemValue>hayreddintuzel@gmail.com</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="fab fa-whatsapp"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="https://api.whatsapp.com/send?phone=905317908874" target="_blank" ><i className="fab fa-whatsapp"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Phone</ContactItemKey>
                   <ContactItemValue>+90 531 790 88 74</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="https://goo.gl/maps/ob23pSAaMTK2" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Adress</ContactItemKey><ContactItemValue>Çanakkale / Turkey</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="far fa-handshake"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA onClick={this.toggle}><i className="far fa-handshake"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Status</ContactItemKey><ContactItemValue>Available for Hiring</ContactItemValue>
                 </li>
               </ul>
               </CardCol>
               <CardCol xs="12" sm="12" md="6">
-                <Form>
-                  <FormGroup>
-                    <Label for="exampleEmail">Name</Label>
-                    <Input type="text" name="name" id="name_" placeholder="Your Name.." />
-                  </FormGroup>
-                  <FormGroup>
-                    <Label for="exampleEmail">Email</Label>
-                    <Input type="email" name="email" id="email_" placeholder="Your E-mail.." />
-                  </FormGroup>
-                  <FormGroup>
-                    <Label for="exampleText">Text Area</Label>
-                    <Input type="textarea" name="text" id="exampleText" />
-                  </FormGroup>
-                  <FormGroup>
-                    <Label for="exampleFile">File</Label>
-                    <Input type="file" name="file" id="exampleFile" />
-                    <FormText color="muted">
-                    </FormText>
-                  </FormGroup>
-                  <Button>Submit</Button>
-                </Form>
+              <Form>
+                <FormGroup>
+                <Label for="name_">Name</Label>
+                  <Input type="text" name="name" id="name_" placeholder="Your name.." />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="email_">Email</Label>
+                  <Input type="email" name="email" id="email_" placeholder="Your email adress.." />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="exampleFile">File</Label>
+                  <Input type="file" name="file" id="exampleFile" />
+                  <FormText color="muted">
+                  If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
+                  </FormText>
+                </FormGroup>
+                <FormGroup>
+                  <Label for="description_">Your Message</Label>
+                  <Input type="textarea" name="description" id="description_" />
+                </FormGroup>
+              </Form>
               </CardCol>
             </Row>
           </Card>
         </Container>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+      <ModalHeader toggle={this.toggle}>Contact Form</ModalHeader>
+      <ModalBody>
+      <Form>
+        <FormGroup>
+          <Label for="name_">Name</Label>
+          <Input type="text" name="name" id="name_" placeholder="Your name.." />
+        </FormGroup>
+        <FormGroup>
+          <Label for="email_">Email</Label>
+          <Input type="email" name="email" id="email_" placeholder="Your email adress.." />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleFile">File</Label>
+          <Input type="file" name="file" id="exampleFile" />
+          <FormText color="muted">
+          If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
+          </FormText>
+        </FormGroup>
+        <FormGroup>
+          <Label for="description_">Job Description</Label>
+          <Input type="textarea" name="description" id="description_" />
+        </FormGroup>
+      </Form>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="primary" onClick={this.toggle}>Send</Button>{' '}
+        <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+      </ModalFooter>
+    </Modal>
       </Animated>
-  )
-}
+  )}
+};
+

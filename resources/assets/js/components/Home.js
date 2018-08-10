@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
 import styled from "styled-components";
 //Animations
 import {Animated} from "react-animated-css";
@@ -9,10 +12,11 @@ import {Animated} from "react-animated-css";
 import profilePic from '../images/profile.jpg';
 import background from '../images/background.jpg';
 
+
 //inline styles
 const styles = {
   cardTop: {
-    backgroundImage: `url(${background})`,
+    backgroundImage: `url(${profilePic})`,
     backgroundSize : "cover",
     margin: "0px",
     borderTopRightRadius : "20px",
@@ -126,7 +130,7 @@ const StyledCardImage = styled(CardImg)`
   position : relative;
   left: 20%;
   top: 30px;
-  
+
 
   }
 
@@ -170,7 +174,7 @@ const StyledCardText = styled(CardTitle)`
   line-height : 24px;
 `;
 
-const DownnloadButton = styled(Button)`
+const DownloadButton = styled(Button)`
   margin-top : 25px;
   background-color: rgb(255, 255, 255);
   color: rgb(33, 33, 33);
@@ -233,12 +237,39 @@ const CardCol = styled(Col)`
   padding-left : 30px;
 `;
 
+const NonStyledA = styled.a`
+  text-decoration: none;
+  color:black;
+
+  &:hover {
+    text-decoration: none;
+    color:pink;
+  }
+`;
+
 
 const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","tada","wobble","jello","bounceIn","bounceInDown","bounceInLeft","bounceInRight","bounceInUp","bounceInUp","fadeIn","fadeInDown","flipInX","flipInY","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
-export function Home() {
+export class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    };
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  render() {
   return (
   <Animated animationIn={rand1} animationOut={rand2} isVisible={true}>
     <Container fluid={true}>
@@ -253,7 +284,7 @@ export function Home() {
             <SocialIconsDiv>
               <Row>
                 <StyledSocialIconsCol>
-                <StyledA href="https://github.com/hayreddintuzel"><i class="fab fa-github"></i></StyledA>
+                <StyledA href="https://github.com/hayreddintuzel"><i className="fab fa-github"></i></StyledA>
                 <StyledA href="https://twitter.com/devneeddev"><i className="fab fa-twitter"></i></StyledA>
                 <StyledA href="https://www.instagram.com/devneeddev/"><i className="fab fa-instagram"></i></StyledA>
                 <StyledA href="https://www.linkedin.com/in/hayreddin-tüzel-58a759125"><i className="fab fa-linkedin"></i></StyledA>
@@ -268,32 +299,32 @@ export function Home() {
               <StyledCardTitle><span style={{ color:"gray" }}>Hayreddin</span> <span>Tüzel</span></StyledCardTitle>
               <StyledCardText><p>Since beginning of 2017 I have developed myself on web programming. In this process, I have been involved in the construction of many websites. But if I need to count my main projects;</p>
                 <ul style={{ paddingLeft:"10px"}}>
-                  <li> <i class="fas fa-bookmark"></i> A website developed for a national conference organized by the Navy,</li>
-                  <li> <i class="fas fa-bookmark"></i> A comprehensive website for Renee Hobbs, a highly respected professor in his field, </li>
-                  <li> <i class="fas fa-bookmark"></i> Lastly, I have been worked as a team leader in the development of a very comprehensive and high-budget LMS system with video streaming. </li>
+                  <li> <i className="fas fa-bookmark"></i> A website developed for a national conference organized by the Navy,</li>
+                  <li> <i className="fas fa-bookmark"></i> A comprehensive website for Renee Hobbs, a highly respected professor in his field, </li>
+                  <li> <i className="fas fa-bookmark"></i> Lastly, I have been worked as a team leader in the development of a very comprehensive and high-budget LMS system with video streaming. </li>
                 </ul>
                   Now, I am  planing to develop web products for global marketing aimed to CMS users. Also, I always open to challenges to improve myself.
               </StyledCardText>
-              <DownnloadButton>Download Resume</DownnloadButton>
+              <DownloadButton><NonStyledA href="hayreddintuzelcv.pdf" download>Download Resume</NonStyledA></DownloadButton>
             </CardCol>
-            <CardCol xs="12" sm="12" md="6" >  
+            <CardCol xs="12" sm="12" md="6" >
               <ul style={{ paddingLeft:"0px", paddingTop:"30px" }}>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="far fa-envelope"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="mailto:hayreddintuzel@gmail.com?"><i className="far fa-envelope"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Email</ContactItemKey>
                   <ContactItemValue>hayreddintuzel@gmail.com</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="fab fa-whatsapp"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="https://api.whatsapp.com/send?phone=905317908874" target="_blank" ><i className="fab fa-whatsapp"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Phone</ContactItemKey>
                   <ContactItemValue>+90 531 790 88 74</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="https://goo.gl/maps/ob23pSAaMTK2" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Adress</ContactItemKey><ContactItemValue>Çanakkale / Turkey</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="#"><i className="far fa-handshake"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA onClick={this.toggle}><i className="far fa-handshake"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Status</ContactItemKey><ContactItemValue>Available for Hiring</ContactItemValue>
                 </li>
               </ul>
@@ -302,8 +333,39 @@ export function Home() {
         </CardBody>
       </Card>
     </Container>
-  </Animated>
-  );
-}
+    <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+      <ModalHeader toggle={this.toggle}>Contact Form</ModalHeader>
+      <ModalBody>
+      <Form>
+        <FormGroup>
+          <Label for="name_">Name</Label>
+          <Input type="text" name="name" id="name_" placeholder="Your name.." />
+        </FormGroup>
+        <FormGroup>
+          <Label for="email_">Email</Label>
+          <Input type="email" name="email" id="email_" placeholder="Your email adress.." />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exampleFile">File</Label>
+          <Input type="file" name="file" id="exampleFile" />
+          <FormText color="muted">
+          If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
+          </FormText>
+        </FormGroup>
+        <FormGroup>
+          <Label for="description_">Job Description</Label>
+          <Input type="textarea" name="description" id="description_" />
+        </FormGroup>
+      </Form>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="primary" onClick={this.toggle}>Send</Button>{' '}
+        <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+      </ModalFooter>
+    </Modal>
 
-export default Home;
+  </Animated>
+  );}
+};
+
+

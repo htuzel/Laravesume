@@ -30,7 +30,8 @@ const styles = {
   },
 
   z_index : {
-    zIndex : "30"
+    zIndex : "30",
+    paddingLeft: "2.5px"
   }
 };
 
@@ -153,7 +154,7 @@ const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","ta
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
-export function Resume () {    
+export function Resume () {
     return (
       <Animated animationIn={rand1} animationOut={rand2} isVisible={true}>
         <Container fluid={true}>
@@ -170,9 +171,10 @@ export function Resume () {
                     </IconContainer>
                     <SmalHr/>
                     <ExpContainer>
-                      <h5>Title of section 1</h5>
-                      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</small>
-                    </ExpContainer> 
+                      <h5>Naval Academy (2009 - 2013)</h5>
+                      <small>I studied Computer Engineering here. I finished the my department with a 3.50 credit average and first degree. I also gain leadership skills by
+                            commanding a student group of 300 people. These years I deal with sailing.</small>
+                    </ExpContainer>
                   </div>
                 </TimeLineContainer>
               </ScrollAnimation>
@@ -184,9 +186,9 @@ export function Resume () {
                     </IconContainer>
                     <SmalHr/>
                     <ExpContainer>
-                      <h5>Title of section 1</h5>
-                      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</small>
-                    </ExpContainer> 
+                      <h5>TOEFL IBT Preparing Course (2015)</h5>
+                      <small>was selected by the Navy for the TOEFL IBT preparation course to be post-graduated in the US in 2014. In this process I participated in the TOEFL IBT preparation course. At the end of the course I was accepted by the University of Southern California, receiving enough points from the TOEFL IBT and GRE exams. This process was interrupted after the coup attempt in Turkey..</small>
+                    </ExpContainer>
                   </div>
                 </TimeLineContainer>
               </ScrollAnimation>
@@ -194,13 +196,41 @@ export function Resume () {
                 <TimeLineContainer data-aos="zoom-in-right">
                   <div>
                     <IconContainer>
-                      <i className="fas fa-graduation-cap fa-2x" style={ styles.z_index }></i>
+                      <i className="fas fa-briefcase fa-2x" style={ styles.z_index }></i>
                     </IconContainer>
                     <SmalHr/>
                     <ExpContainer>
-                      <h5>Title of section 1</h5>
-                      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</small>
-                    </ExpContainer> 
+                      <h5>Navy Officer (2013 - 2017)</h5>
+                      <small>I worked as an officer in the Navy from 2013 to 2017. In this process, I was rewarded many times by my supervisors. During this period, I contacted many foreigners and got the opportunity to develop my foreign language and. At this time, I also got the privilege of recognizing many different cultures.</small>
+                    </ExpContainer>
+                  </div>
+                </TimeLineContainer>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <TimeLineContainer data-aos="zoom-in-right">
+                  <div>
+                    <IconContainer>
+                      <i className="fas fa-briefcase fa-2x" style={ styles.z_index }></i>
+                    </IconContainer>
+                    <SmalHr/>
+                    <ExpContainer>
+                      <h5>Interpretership (2017)</h5>
+                      <small>I have been an interpreter for the articles on the website “onurtestsurusunde.com”. I have translated the articles given by my employer from English to Turkish. I worked for about 6 months in this business.</small>
+                    </ExpContainer>
+                  </div>
+                </TimeLineContainer>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <TimeLineContainer data-aos="zoom-in-right">
+                  <div>
+                    <IconContainer>
+                      <i className="fas fa-briefcase fa-2x" style={ styles.z_index }></i>
+                    </IconContainer>
+                    <SmalHr/>
+                    <ExpContainer>
+                      <h5>Freelance Web Developer (2017 - Now)</h5>
+                      <small>I have been working as a web developer since the beginning of 2017. I am practicing my studies together with my freelancer team. I use Laravel Framework and Wordpress as a technology. I lead my team in the back-end and front-end.</small>
+                    </ExpContainer>
                   </div>
                 </TimeLineContainer>
               </ScrollAnimation>
@@ -223,7 +253,7 @@ export function Resume () {
                   <StyledH4>HTML/CSS</StyledH4>
                   <StyledProgress color="secondary" value="99" />
                 </CardCol>
-                <CardCol xs="12" sm="12" md="6" >  
+                <CardCol xs="12" sm="12" md="6" >
                   <StyledH3>Tools</StyledH3>
                   <StyledH4>Git with GitHub/GitLab</StyledH4>
                   <StyledProgress color="secondary" value="100" />
