@@ -4,6 +4,7 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import {Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 import styled from "styled-components";
 //Animations
@@ -248,7 +249,7 @@ const NonStyledA = styled.a`
 `;
 
 
-const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","tada","wobble","jello","bounceIn","bounceInDown","bounceInLeft","bounceInRight","bounceInUp","bounceInUp","fadeIn","fadeInDown","flipInX","flipInY","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
+const animation = ["fadeIn","fadeInDown","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
@@ -257,16 +258,67 @@ export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      email: false,
+      name: false,
+      description: false
     };
 
     this.toggle = this.toggle.bind(this);
+    this.handleInvalidSubmit = this.handleInvalidSubmit.bind(this);
+    this.handleValidSubmit = this.handleValidSubmit.bind(this);
+    this.fileChangedHandler = this.fileChangedHandler.bind(this);
+    this.descriptionChange = this.descriptionChange.bind(this);
+
   }
 
   toggle() {
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  fileChangedHandler(event) {
+    console.log(event.target.files[0]);
+    this.setState({file: event.target.files[0]})
+
+  }
+
+  descriptionChange(event) {
+    this.setState({description: event.target.value})
+  }
+
+
+  handleValidSubmit(event, values) {
+    const data = new FormData(event.target);
+    // NOTE: you access FormData fields with `data.get(fieldName)`
+    const formData = new FormData();
+        formData.append( 'image', this.state.file );
+        formData.append( 'name', values.name );
+        formData.append( 'email', values.email );
+        formData.append( 'description', this.state.description);
+    axios.post('/contact-form',
+        formData
+      )
+      .then(function (response) {
+        //this.setState({ modal: !this.state.modal });
+        swal("Message Sended!", "I will return to you as soon as possible.", "success");
+        console.log(response);
+      })
+      .catch(function (error) {
+        swal("Message Not Sended!", "There are an error! Please try again!", "error");
+        console.log(error);
+
+      });
+
+
+
+
+  }
+
+  handleInvalidSubmit(event, errors, values) {
+    alert("YANLİS");
+    this.setState({email: values.email, error: true});
   }
 
   render() {
@@ -335,33 +387,27 @@ export class Home extends React.Component {
     </Container>
     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
       <ModalHeader toggle={this.toggle}>Contact Form</ModalHeader>
+      <AvForm onValidSubmit={this.handleValidSubmit} onInvalidSubmit={this.handleInvalidSubmit}>
       <ModalBody>
-      <Form>
-        <FormGroup>
-          <Label for="name_">Name</Label>
-          <Input type="text" name="name" id="name_" placeholder="Your name.." />
-        </FormGroup>
-        <FormGroup>
-          <Label for="email_">Email</Label>
-          <Input type="email" name="email" id="email_" placeholder="Your email adress.." />
-        </FormGroup>
-        <FormGroup>
+          <AvField name="name" label="Name" required />
+          <AvField name="email" label="Email Address" type="email" required />
+          <FormGroup>
           <Label for="exampleFile">File</Label>
-          <Input type="file" name="file" id="exampleFile" />
+          <Input type="file" name="file" id="exampleFile" onChange={this.fileChangedHandler}/>
           <FormText color="muted">
           If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
           </FormText>
         </FormGroup>
         <FormGroup>
           <Label for="description_">Job Description</Label>
-          <Input type="textarea" name="description" id="description_" />
+          <Input type="textarea" name="description" id="description_" onChange={this.descriptionChange}/>
         </FormGroup>
-      </Form>
       </ModalBody>
       <ModalFooter>
-        <Button color="primary" onClick={this.toggle}>Send</Button>{' '}
+        <Button color="primary">Send</Button>{' '}
         <Button color="secondary" onClick={this.toggle}>Cancel</Button>
       </ModalFooter>
+      </AvForm>
     </Modal>
 
   </Animated>

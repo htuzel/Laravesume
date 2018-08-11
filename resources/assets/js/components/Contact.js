@@ -124,7 +124,7 @@ const StyledA = styled.a`
 `;
 
 
-const animation = ["bounce","pulse","rubberBand","shake","headShake","swing","tada","wobble","jello","bounceIn","bounceInDown","bounceInLeft","bounceInRight","bounceInUp","bounceInUp","fadeIn","fadeInDown","flipInX","flipInY","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
+const animation = ["fadeIn","fadeInDown","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp"]
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 

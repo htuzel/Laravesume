@@ -30,3 +30,6 @@ Route::get('/{blog}', function () {
 Route::get('/{contact}', function () {
     return view('welcome');
 });
+
+Route::post('contact-form', 'SendMailController@html_email')->name('profile');
+
