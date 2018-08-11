@@ -6665,7 +6665,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(18);
+var emptyFunction = __webpack_require__(19);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -6959,10 +6959,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _assign = __webpack_require__(8);
 
-var ReactCurrentOwner = __webpack_require__(22);
+var ReactCurrentOwner = __webpack_require__(23);
 
 var warning = __webpack_require__(5);
-var canDefineProperty = __webpack_require__(21);
+var canDefineProperty = __webpack_require__(22);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
 var REACT_ELEMENT_TYPE = __webpack_require__(55);
@@ -7297,7 +7297,7 @@ module.exports = ReactElement;
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(107);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(12);
@@ -9757,7 +9757,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
 
 //# sourceMappingURL=styled-components.browser.esm.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(16), __webpack_require__(135)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(17), __webpack_require__(135)(module)))
 
 /***/ }),
 /* 14 */
@@ -9899,6 +9899,12 @@ Animated.defaultProps = {
 /* 15 */
 /***/ (function(module, exports) {
 
+module.exports = "/images/background.jpg?13309242ca88b10d5e9118cc658b51a3";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
 var g;
 
 // This works in non-strict mode
@@ -9923,7 +9929,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -10113,7 +10119,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10136,7 +10142,7 @@ if (true) {
 module.exports = emptyObject;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10178,7 +10184,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10245,7 +10251,7 @@ module.exports = warning;
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10321,7 +10327,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10350,7 +10356,7 @@ if (true) {
 module.exports = canDefineProperty;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10380,12 +10386,6 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/background.jpg?13309242ca88b10d5e9118cc658b51a3";
 
 /***/ }),
 /* 24 */
@@ -12926,7 +12926,7 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(16)))
 
 /***/ }),
 /* 25 */
@@ -13030,7 +13030,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
 /* 26 */
@@ -13576,7 +13576,7 @@ module.exports = checkPropTypes;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 
 
@@ -13952,7 +13952,7 @@ module.exports = lowPriorityWarning;
 
 var _prodInvariant = __webpack_require__(11);
 
-var ReactCurrentOwner = __webpack_require__(22);
+var ReactCurrentOwner = __webpack_require__(23);
 
 var invariant = __webpack_require__(4);
 var warning = __webpack_require__(5);
@@ -26602,8 +26602,8 @@ var _prodInvariant = __webpack_require__(11),
 
 var ReactNoopUpdateQueue = __webpack_require__(54);
 
-var canDefineProperty = __webpack_require__(21);
-var emptyObject = __webpack_require__(17);
+var canDefineProperty = __webpack_require__(22);
+var emptyObject = __webpack_require__(18);
 var invariant = __webpack_require__(4);
 var lowPriorityWarning = __webpack_require__(33);
 
@@ -26915,13 +26915,13 @@ module.exports = getIteratorFn;
 
 
 
-var ReactCurrentOwner = __webpack_require__(22);
+var ReactCurrentOwner = __webpack_require__(23);
 var ReactComponentTreeHook = __webpack_require__(34);
 var ReactElement = __webpack_require__(9);
 
 var checkReactTypeSpec = __webpack_require__(147);
 
-var canDefineProperty = __webpack_require__(21);
+var canDefineProperty = __webpack_require__(22);
 var getIteratorFn = __webpack_require__(56);
 var warning = __webpack_require__(5);
 var lowPriorityWarning = __webpack_require__(33);
@@ -27156,7 +27156,7 @@ module.exports = ReactElementValidator;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(59);
-module.exports = __webpack_require__(173);
+module.exports = __webpack_require__(176);
 
 
 /***/ }),
@@ -44352,7 +44352,7 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(62)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16), __webpack_require__(62)(module)))
 
 /***/ }),
 /* 62 */
@@ -49235,7 +49235,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_calendar_css__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_calendar_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__css_calendar_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MyApp__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__registerServiceWorker__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__registerServiceWorker__ = __webpack_require__(175);
 //Bootstrap files
 
 
@@ -49414,9 +49414,9 @@ if (true) {
 
 var _assign = __webpack_require__(8);
 var invariant = __webpack_require__(4);
-var emptyObject = __webpack_require__(17);
+var emptyObject = __webpack_require__(18);
 var warning = __webpack_require__(5);
-var emptyFunction = __webpack_require__(18);
+var emptyFunction = __webpack_require__(19);
 var checkPropTypes = __webpack_require__(28);
 
 // TODO: this is special because it gets imported during build.
@@ -50910,12 +50910,12 @@ var React = __webpack_require__(0);
 var warning = __webpack_require__(5);
 var ExecutionEnvironment = __webpack_require__(89);
 var _assign = __webpack_require__(8);
-var emptyFunction = __webpack_require__(18);
+var emptyFunction = __webpack_require__(19);
 var checkPropTypes = __webpack_require__(28);
 var getActiveElement = __webpack_require__(90);
 var shallowEqual = __webpack_require__(91);
 var containsNode = __webpack_require__(92);
-var emptyObject = __webpack_require__(17);
+var emptyObject = __webpack_require__(18);
 var hyphenateStyleName = __webpack_require__(43);
 var camelizeStyleName = __webpack_require__(96);
 
@@ -68740,12 +68740,12 @@ exports.push([module.i, "time.icon\r\n{\r\n  font-size: 1em; /* change icon size
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Home__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Resume__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Blog__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Service__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Contact__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Resume__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Blog__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Service__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Contact__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_reactstrap__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_luxbar_build_luxbar_css__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_luxbar_build_luxbar_css__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_luxbar_build_luxbar_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_luxbar_build_luxbar_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -68996,11 +68996,11 @@ BrowserRouter.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(45);
@@ -69420,11 +69420,11 @@ function valueEqual(a, b) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(45);
@@ -69741,10 +69741,10 @@ var createHashHistory = function createHashHistory() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(29);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -70757,9 +70757,9 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_profile_jpg__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_profile_jpg__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_profile_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_profile_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_background_jpg__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -71366,7 +71366,7 @@ function isObject(value) {
 
 module.exports = isFunction;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
 /* 127 */
@@ -74246,7 +74246,7 @@ var cloneElement = ReactElement.cloneElement;
 
 if (true) {
   var lowPriorityWarning = __webpack_require__(33);
-  var canDefineProperty = __webpack_require__(21);
+  var canDefineProperty = __webpack_require__(22);
   var ReactElementValidator = __webpack_require__(57);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
@@ -74366,7 +74366,7 @@ module.exports = React;
 var PooledClass = __webpack_require__(143);
 var ReactElement = __webpack_require__(9);
 
-var emptyFunction = __webpack_require__(18);
+var emptyFunction = __webpack_require__(19);
 var traverseAllChildren = __webpack_require__(144);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -74674,7 +74674,7 @@ module.exports = PooledClass;
 
 var _prodInvariant = __webpack_require__(11);
 
-var ReactCurrentOwner = __webpack_require__(22);
+var ReactCurrentOwner = __webpack_require__(23);
 var REACT_ELEMENT_TYPE = __webpack_require__(55);
 
 var getIteratorFn = __webpack_require__(56);
@@ -75159,7 +75159,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 }
 
 module.exports = checkReactTypeSpec;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
 /* 148 */
@@ -75317,7 +75317,7 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 var _assign = __webpack_require__(8);
 
-var emptyObject = __webpack_require__(17);
+var emptyObject = __webpack_require__(18);
 var _invariant = __webpack_require__(4);
 
 if (true) {
@@ -76292,10 +76292,16 @@ var isNode = typeof process !== 'undefined' && process.versions != null && proce
 
 exports.isBrowser = isBrowser;
 exports.isNode = isNode;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
 /* 157 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/profile.jpg?88dfeea16dd0aafbd97bdc7fa5d5f9f1";
+
+/***/ }),
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76306,9 +76312,9 @@ exports.isNode = isNode;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_animate_on_scroll__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_animate_on_scroll__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_animate_on_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_animate_on_scroll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_background_jpg__);
 var _templateObject = _taggedTemplateLiteral(['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n'], ['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n']),
@@ -76350,7 +76356,8 @@ var styles = {
   },
   card: {
     borderRadius: "20px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+    marginBottom: "40px"
   },
 
   z_index: {
@@ -77203,7 +77210,7 @@ function Resume() {
 }
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77227,7 +77234,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodashThrottle = __webpack_require__(159);
+var _lodashThrottle = __webpack_require__(160);
 
 var _lodashThrottle2 = _interopRequireDefault(_lodashThrottle);
 
@@ -77501,7 +77508,7 @@ ScrollAnimation.propTypes = {
 module.exports = exports["default"];
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -77944,10 +77951,10 @@ function toNumber(value) {
 
 module.exports = throttle;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77958,9 +77965,9 @@ module.exports = throttle;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_background_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_laravel_png__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_laravel_png__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_laravel_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_laravel_png__);
 var _templateObject = _taggedTemplateLiteral(['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n'], ['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n']),
@@ -77992,7 +77999,8 @@ var styles = {
   },
   card: {
     borderRadius: "20px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+    marginBottom: "40px"
   },
 
   z_index: {
@@ -78135,33 +78143,43 @@ function Blog() {
 }
 
 /***/ }),
-/* 161 */
+/* 162 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/laravel.png?e880ac122a5b4b9a0ca75673970bca1d";
+
+/***/ }),
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Service;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Service; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_background_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_services1_svg__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_services1_svg__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_services1_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_services1_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_services2_svg__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_services2_svg__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_services2_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_services2_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_services3_svg__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_services3_svg__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_services3_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_services3_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_services4_svg__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_services4_svg__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_services4_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_services4_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_here_svg__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_here_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_here_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _templateObject = _taggedTemplateLiteral(['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n'], ['\n  background-image: url(', ');\n  background-size : cover;\n  margin: 0px;\n  border-top-right-radius : 20px;\n  border-top-left-radius : 20px;\n  height: 100px;\n\n  @media only screen and (max-width: 768px) {\n    height: 100px;\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  margin-top: 25px;\n  padding-left : 30px;\n'], ['\n  margin-top: 25px;\n  padding-left : 30px;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 3em;\n  margin : auto;\n']),
@@ -78171,9 +78189,22 @@ var _templateObject = _taggedTemplateLiteral(['\n  background-image: url(', ');\
     _templateObject7 = _taggedTemplateLiteral(['\n  margin-top : 1em;\n  background-color: rgb(255, 255, 255);\n  color: rgb(33, 33, 33);\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.3) 0px 2px 4px;\n  text-transform: uppercase;\n  font-family: inherit;\n  font-size: 14px;\n  font-weight: 500;\n  line-height: 2.8;\n  outline: none;\n  border-width: 0px;\n  border-style: initial;\n  border-color: initial;\n  border-image: initial;\n  border-radius: 50%;\n  margin-bottom : 2em;\n  height: 125px;\n  &:hover {\n    background-color: #fff;\n    color: gray;\n    box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px, rgba(0, 0, 0, 0.4) 1px 3px 5px;\n  }\n'], ['\n  margin-top : 1em;\n  background-color: rgb(255, 255, 255);\n  color: rgb(33, 33, 33);\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.3) 0px 2px 4px;\n  text-transform: uppercase;\n  font-family: inherit;\n  font-size: 14px;\n  font-weight: 500;\n  line-height: 2.8;\n  outline: none;\n  border-width: 0px;\n  border-style: initial;\n  border-color: initial;\n  border-image: initial;\n  border-radius: 50%;\n  margin-bottom : 2em;\n  height: 125px;\n  &:hover {\n    background-color: #fff;\n    color: gray;\n    box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px, rgba(0, 0, 0, 0.4) 1px 3px 5px;\n  }\n']),
     _templateObject8 = _taggedTemplateLiteral(['\n  width: 100px;\n  height: 100px;\n  margin: 0 auto;\n  text-align: center;\n  padding-top: 10px;\n'], ['\n  width: 100px;\n  height: 100px;\n  margin: 0 auto;\n  text-align: center;\n  padding-top: 10px;\n']),
     _templateObject9 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 12px;\n  margin-top : 1em;\n  text-align: center;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 12px;\n  margin-top : 1em;\n  text-align: center;\n']),
-    _templateObject10 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 18px;\n  margin-top : 1em;\n  text-align: center;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 18px;\n  margin-top : 1em;\n  text-align: center;\n']);
+    _templateObject10 = _taggedTemplateLiteral(['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 18px;\n  margin-top : 1em;\n  text-align: center;\n'], ['\n  font-family: \'Montserrat\', sans-serif;\n  font-weight: 700;\n  font-size: 18px;\n  margin-top : 1em;\n  text-align: center;\n']),
+    _templateObject11 = _taggedTemplateLiteral(['\n  text-decoration: none;\n  color:black;\n\n  &:hover {\n    text-decoration: none;\n    color:gray;\n  }\n'], ['\n  text-decoration: none;\n  color:black;\n\n  &:hover {\n    text-decoration: none;\n    color:gray;\n  }\n']),
+    _templateObject12 = _taggedTemplateLiteral(['\n  font-family: \'Roboto\', Helvetica, sans-serif;\n  font-size: 15px;\n  line-height: 1.6em;\n  display: inline-block;\n  min-width: 75px;\n  text-align: left;\n  margin-bottom : 16px;\n'], ['\n  font-family: \'Roboto\', Helvetica, sans-serif;\n  font-size: 15px;\n  line-height: 1.6em;\n  display: inline-block;\n  min-width: 75px;\n  text-align: left;\n  margin-bottom : 16px;\n']),
+    _templateObject13 = _taggedTemplateLiteral(['\n  display: inline-block;\n  color: #9e9e9e;\n  text-align: left;\n  font-family: \'Roboto\', Helvetica, sans-serif;\n  font-size: 15px;\n  line-height: 1.6em;\n  min-width: 190px;\n'], ['\n  display: inline-block;\n  color: #9e9e9e;\n  text-align: left;\n  font-family: \'Roboto\', Helvetica, sans-serif;\n  font-size: 15px;\n  line-height: 1.6em;\n  min-width: 190px;\n']),
+    _templateObject14 = _taggedTemplateLiteral(['\n  font-size: 15px;\n  line-height: 1.6em;\n  margin-right:10px;\n  color: gray;\n  border-radius: 24px;\n\n  &:hover {\n    color: pink;\n  }\n'], ['\n  font-size: 15px;\n  line-height: 1.6em;\n  margin-right:10px;\n  color: gray;\n  border-radius: 24px;\n\n  &:hover {\n    color: pink;\n  }\n']),
+    _templateObject15 = _taggedTemplateLiteral(['\n  display: inline-block;\n  width: 36px;\n  height: 36px;\n  background-color: rgb(255, 255, 255);\n  color: rgb(158, 158, 158);\n  text-align: center;\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px 0px;\n  border-radius: 24px;\n  margin: 0px 4px;\n  padding-top: 7px;\n\n  &:hover {\n    color: pink;\n    box-shadow: rgba(0, 0, 0, 0.2) 1px 4px 9px 1px;\n  }\n'], ['\n  display: inline-block;\n  width: 36px;\n  height: 36px;\n  background-color: rgb(255, 255, 255);\n  color: rgb(158, 158, 158);\n  text-align: center;\n  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px 0px;\n  border-radius: 24px;\n  margin: 0px 4px;\n  padding-top: 7px;\n\n  &:hover {\n    color: pink;\n    box-shadow: rgba(0, 0, 0, 0.2) 1px 4px 9px 1px;\n  }\n']);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
 
 
 
@@ -78182,6 +78213,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 //Animations
 
 //images
+
 
 
 
@@ -78204,7 +78236,8 @@ var styles = {
   },
   card: {
     borderRadius: "20px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+    marginBottom: "40px"
   },
 
   z_index: {
@@ -78234,242 +78267,626 @@ var StyledH4 = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */
 
 var StyledH3 = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].h3(_templateObject10);
 
+var NonStyledA = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject11);
+
+var ContactItemKey = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].span(_templateObject12);
+
+var ContactItemValue = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].span(_templateObject13);
+
+var ContactItemIcon = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].span(_templateObject14);
+
+var StyledA = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].a(_templateObject15);
+
 var animation = ["bounce", "pulse", "rubberBand", "shake", "headShake", "swing", "tada", "wobble", "jello", "bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceInUp", "fadeIn", "fadeInDown", "flipInX", "flipInY", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp"];
 var rand1 = animation[Math.floor(Math.random() * animation.length)];
 var rand2 = animation[Math.floor(Math.random() * animation.length)];
 
-function Service() {
+var Service = function (_React$Component) {
+  _inherits(Service, _React$Component);
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_3_react_animated_css__["Animated"],
-    { animationIn: rand1, animationOut: rand2, isVisible: true },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* Container */],
-      { fluid: true },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
-        { style: styles.card },
+  function Service(props) {
+    _classCallCheck(this, Service);
+
+    var _this = _possibleConstructorReturn(this, (Service.__proto__ || Object.getPrototypeOf(Service)).call(this, props));
+
+    _this.state = {
+      modal1: false,
+      modal2: false,
+      modal3: false,
+      modal4: false,
+      modal5: false,
+      modal6: false
+    };
+
+    _this.toggle1 = _this.toggle1.bind(_this);
+    _this.toggle2 = _this.toggle2.bind(_this);
+    _this.toggle3 = _this.toggle3.bind(_this);
+    _this.toggle4 = _this.toggle4.bind(_this);
+    _this.toggle5 = _this.toggle5.bind(_this);
+    _this.toggle6 = _this.toggle6.bind(_this);
+    return _this;
+  }
+
+  _createClass(Service, [{
+    key: 'toggle1',
+    value: function toggle1() {
+      this.setState({
+        modal1: !this.state.modal1
+      });
+    }
+  }, {
+    key: 'toggle2',
+    value: function toggle2() {
+      this.setState({
+        modal2: !this.state.modal2
+      });
+    }
+  }, {
+    key: 'toggle3',
+    value: function toggle3() {
+      this.setState({
+        modal3: !this.state.modal3
+      });
+    }
+  }, {
+    key: 'toggle4',
+    value: function toggle4() {
+      this.setState({
+        modal4: !this.state.modal4
+      });
+    }
+  }, {
+    key: 'toggle5',
+    value: function toggle5() {
+      this.setState({
+        modal5: !this.state.modal5
+      });
+    }
+  }, {
+    key: 'toggle6',
+    value: function toggle6() {
+      this.setState({
+        modal6: !this.state.modal6
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_3_react_animated_css__["Animated"],
+        { animationIn: rand1, animationOut: rand2, isVisible: true },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          StyledCardTop,
-          null,
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* Container */],
+          { fluid: true },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            StyledH2,
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
+            { style: styles.card },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              StyledCardTop,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                StyledH2,
+                null,
+                'Services'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              StyledCardTitle,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { style: { color: "gray" } },
+                'My'
+              ),
+              ' ',
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                'Services'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* Row */],
+              { style: { paddingRight: "20px" } },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '12', sm: '6', md: '3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ServiceCard,
+                  { onClick: this.toggle1 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_5__images_services1_svg___default.a, alt: 'Web Design' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    StyledH3,
+                    null,
+                    'Web Design'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '12', sm: '6', md: '3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ServiceCard,
+                  { onClick: this.toggle2 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_6__images_services2_svg___default.a, alt: 'Coding' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    StyledH3,
+                    null,
+                    'Coding'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '12', sm: '6', md: '3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ServiceCard,
+                  { onClick: this.toggle3 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_7__images_services3_svg___default.a, alt: 'Seo' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    StyledH3,
+                    null,
+                    'Seo'
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '12', sm: '6', md: '3' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ServiceCard,
+                  { onClick: this.toggle4 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_8__images_services4_svg___default.a, alt: 'Digital Marketing' })
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    StyledH3,
+                    null,
+                    'Digital Marketing'
+                  )
+                )
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              StyledCardTitle,
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { style: { color: "gray" } },
+                'Who hired'
+              ),
+              ' me?'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* Row */],
+              { style: { paddingRight: "8px" } },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  NonStyledA,
+                  { href: 'https://www.turacoon.com', target: '_blank' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientCard,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      ClientImageContainer,
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg___default.a, alt: 'Turacoon' })
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  NonStyledA,
+                  { href: 'https://createtolearn.online', target: '_blank' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientCard,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      ClientImageContainer,
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg___default.a, alt: 'Createtolearn' })
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  NonStyledA,
+                  { href: 'https://www.hayreddintuzel.com', target: '_blank' },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientCard,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      ClientImageContainer,
+                      null,
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_11__images_here_svg___default.a, alt: 'Hayreddin Tuzel' })
+                    )
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ClientCard,
+                  { onClick: this.toggle5 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg___default.a, alt: 'Hire me' })
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ClientCard,
+                  { onClick: this.toggle5 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg___default.a, alt: 'Hire me' })
+                  )
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                CardCol,
+                { xs: '6', sm: '4', md: '2' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  ClientCard,
+                  { onClick: this.toggle5 },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ClientImageContainer,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_12__images_wantYou_svg___default.a, alt: 'Hire me' })
+                  )
+                )
+              )
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal5, toggle: this.toggle5, className: this.props.className, style: { marginTop: "10%" } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle5 },
+            'Contact Form'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
             null,
-            'Services'
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'article',
+              null,
+              'You can communicate with me via the following communication channels or contact form on my website and you can be my employer.',
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'ul',
+                { style: { padding: "40px", marginTop: "50px" } },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { style: { listStyleType: "none" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemIcon,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      StyledA,
+                      { href: 'mailto:hayreddintuzel@gmail.com?' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-envelope' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemKey,
+                    null,
+                    'Email'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemValue,
+                    null,
+                    'hayreddintuzel@gmail.com'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { style: { listStyleType: "none" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemIcon,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      StyledA,
+                      { href: 'https://api.whatsapp.com/send?phone=905317908874', target: '_blank' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fab fa-whatsapp' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemKey,
+                    null,
+                    'Phone'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemValue,
+                    null,
+                    '+90 531 790 88 74'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { style: { listStyleType: "none" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemIcon,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      StyledA,
+                      { href: 'https://goo.gl/maps/ob23pSAaMTK2', target: '_blank' },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-map-marked' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemKey,
+                    null,
+                    'Adress'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemValue,
+                    null,
+                    '\xC7anakkale / Turkey'
+                  )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'li',
+                  { style: { listStyleType: "none" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemIcon,
+                    null,
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      StyledA,
+                      { onClick: this.toggle6 },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-handshake' })
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemKey,
+                    null,
+                    'Status'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    ContactItemValue,
+                    null,
+                    'Available for Hiring'
+                  )
+                )
+              )
+            )
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          StyledCardTitle,
-          null,
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal1, toggle: this.toggle1, className: this.props.className, style: { marginTop: "10%" } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { style: { color: "gray" } },
-            'My'
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle1 },
+            'Contact Form'
           ),
-          ' ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
             null,
-            'Services'
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* Row */],
-          { style: { paddingRight: "20px" } },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '12', sm: '6', md: '3' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ServiceCard,
+              'article',
               null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_5__images_services1_svg___default.a, alt: 'Web Design' })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                StyledH3,
-                null,
-                'Web Design'
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '12', sm: '6', md: '3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ServiceCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_6__images_services2_svg___default.a, alt: 'Coding' })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                StyledH3,
-                null,
-                'Coding'
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '12', sm: '6', md: '3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ServiceCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_7__images_services3_svg___default.a, alt: 'Seo' })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                StyledH3,
-                null,
-                'Seo'
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '12', sm: '6', md: '3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ServiceCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_8__images_services4_svg___default.a, alt: 'Digital Marketing' })
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                StyledH3,
-                null,
-                'Digital Marketing'
-              )
+              'First of all I listen carefully to your needs. Turn your needs into projects and present them to you. Then I draw the wireframes of the web site to be made through profesional drawing programs. I will continue to update the wireframes until you are satisfied. Finally, I deliver the site design to you as an illustrator file or HTML / Javascript code.'
             )
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          StyledCardTitle,
-          null,
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal2, toggle: this.toggle2, className: this.props.className, style: { marginTop: "10%" } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'span',
-            { style: { color: "gray" } },
-            'Who hired'
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle2 },
+            'Contact Form'
           ),
-          ' me?'
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'article',
+              null,
+              'First of all I listen carefully to your needs. I analyze your needs. Turn your needs into projects and present them to you. Then I draw the wireframes of the web site to be made through profesional drawing programs. I will continue to update the wireframes until you are satisfied. Finally, I deploy the project to the server you want. I will carry out project maintenance and repair work free of charge for the next 3 months.'
+            )
+          )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* Row */],
-          { style: { paddingRight: "8px" } },
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal3, toggle: this.toggle3, className: this.props.className, style: { marginTop: "10%" } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle3 },
+            'Contact Form'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
+              'article',
+              null,
+              'I can work with you in 3 different ways. First, I can give SEO consultancy service or I can train you about SEO. Secondly, I can do your site\'s SEO analysis and give you specific SEO advices for your site. Third, I can run all your SEO business and I can provide content, advertising and link support to you or your organization.'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal4, toggle: this.toggle4, className: this.props.className, style: { marginTop: "10%" } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle4 },
+            'Contact Form'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'article',
+              null,
+              'We can work with you on digital marketing in two different ways. First, I can advise you or your organization about digital marketing (Google Adwords, Google Analytics, Google Tags, Social Media ads) and I can train you or your organization about these topics. Secondly, I can analyze your datas with Google Analytics and, I can run social media and Google Adwords ad campaigns on your behalf.'
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Modal */],
+          { isOpen: this.state.modal6, toggle: this.toggle6, className: this.props.className, style: { marginTop: "10%" } },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* ModalHeader */],
+            { toggle: this.toggle6 },
+            'Contact Form'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* ModalBody */],
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* Form */],
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_9__images_turacoon_svg___default.a, alt: 'Turacoon' })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
+                  { 'for': 'name_' },
+                  'Name'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'text', name: 'name', id: 'name_', placeholder: 'Your name..' })
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
+                  { 'for': 'email_' },
+                  'Email'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'email', name: 'email', id: 'email_', placeholder: 'Your email adress..' })
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
+                  { 'for': 'exampleFile' },
+                  'File'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'file', name: 'file', id: 'exampleFile' }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormText */],
+                  { color: 'muted' },
+                  'If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.'
+                )
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
+                  { 'for': 'description_' },
+                  'Job Description'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'textarea', name: 'description', id: 'description_' })
               )
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* ModalFooter */],
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_10__images_createtolearn_svg___default.a, alt: 'Createtolearn' })
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
+              { color: 'primary', onClick: this.toggle },
+              'Send'
+            ),
+            ' ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg___default.a, alt: 'Hire me' })
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg___default.a, alt: 'Hire me' })
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg___default.a, alt: 'Hire me' })
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            CardCol,
-            { xs: '6', sm: '4', md: '2' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              ClientCard,
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                ClientImageContainer,
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_11__images_wantYou_svg___default.a, alt: 'Hire me' })
-              )
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
+              { color: 'secondary', onClick: this.toggle },
+              'Cancel'
             )
           )
         )
-      )
-    )
-  );
-}
+      );
+    }
+  }]);
+
+  return Service;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 /***/ }),
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
+/* 164 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/services1.svg?cb8ad9609d62d3d53863624124ca1bb4";
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/services2.svg?23e42d03001696eedd2f764830d57f8b";
+
+/***/ }),
 /* 166 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/turacoon.svg?07330ceeebea4ebf6b6a6298c065dd3e";
+module.exports = "/images/services3.svg?f26b0e01f08f37fa0b70be60fd97ca87";
 
 /***/ }),
 /* 167 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/createtolearn.svg?acbde808dfbdfc0a08b0416b269aa803";
+module.exports = "/images/services4.svg?90f1321e324dc29c885a2d2eb43bbfe1";
 
 /***/ }),
 /* 168 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/wantYou.svg?bea5b0e7026c1692b4761135339711b6";
+module.exports = "/images/turacoon.svg?07330ceeebea4ebf6b6a6298c065dd3e";
 
 /***/ }),
 /* 169 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/createtolearn.svg?acbde808dfbdfc0a08b0416b269aa803";
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/here.svg?b5dd91f8ef0a2c208fdad5e09f33af61";
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/wantYou.svg?bea5b0e7026c1692b4761135339711b6";
+
+/***/ }),
+/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78480,7 +78897,7 @@ module.exports = "/images/wantYou.svg?bea5b0e7026c1692b4761135339711b6";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_animated_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_animated_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_background_jpg__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -78526,7 +78943,8 @@ var styles = {
   },
   card: {
     borderRadius: "20px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+    marginBottom: "40px"
   },
 
   z_index: {
@@ -78859,13 +79277,13 @@ var Contact = function (_React$Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);;
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(171);
+var content = __webpack_require__(174);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78890,7 +79308,7 @@ if(false) {
 }
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(26)(false);
@@ -78904,7 +79322,7 @@ exports.push([module.i, ".luxbar-default {\n  width: 100%;\n  position: relative
 
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79012,47 +79430,10 @@ function unregister() {
 }
 
 /***/ }),
-/* 173 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 174 */,
-/* 175 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/profile.jpg?88dfeea16dd0aafbd97bdc7fa5d5f9f1";
-
-/***/ }),
 /* 176 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/services1.svg?cb8ad9609d62d3d53863624124ca1bb4";
-
-/***/ }),
-/* 177 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/services2.svg?23e42d03001696eedd2f764830d57f8b";
-
-/***/ }),
-/* 178 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/services3.svg?f26b0e01f08f37fa0b70be60fd97ca87";
-
-/***/ }),
-/* 179 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/services4.svg?90f1321e324dc29c885a2d2eb43bbfe1";
-
-/***/ }),
-/* 180 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/laravel.png?e880ac122a5b4b9a0ca75673970bca1d";
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{resume}', function () {
+    return view('welcome');
+});
+
+Route::get('/{services}', function () {
+    return view('welcome');
+});
+
+Route::get('/{blog}', function () {
+    return view('welcome');
+});
+
+Route::get('/{contact}', function () {
+    return view('welcome');
+});
