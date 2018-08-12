@@ -59,10 +59,12 @@ class MyApp extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </Container>
+            <Container style={{ marginTop:"5px", marginBottom:"55px", marginLeft:"50px"}}>
+                <small style={{ color:"gray" }}>Created with <a href="https://reactjs.org/" target="_blank" style={{ color:"blue" }}>React.js</a> by <span style={{ color:"black" }}>Hayreddin Tüzel</span></small>
+            </Container>
         </Container>
       </Router>
     );
   }
 }
-
 export default MyApp;

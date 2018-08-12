@@ -13,6 +13,8 @@ import {Animated} from "react-animated-css";
 import profilePic from '../images/profile.jpg';
 import background from '../images/background.jpg';
 
+//Loader
+import LoadingScreen from 'react-loading-screen';
 
 //inline styles
 const styles = {
@@ -261,7 +263,8 @@ export class Home extends React.Component {
       modal: false,
       email: false,
       name: false,
-      description: false
+      description: false,
+      mailing:false
     };
 
     this.toggle = this.toggle.bind(this);
@@ -269,6 +272,7 @@ export class Home extends React.Component {
     this.handleValidSubmit = this.handleValidSubmit.bind(this);
     this.fileChangedHandler = this.fileChangedHandler.bind(this);
     this.descriptionChange = this.descriptionChange.bind(this);
+    this.mailing = this.mailing.bind(this);
 
   }
 
@@ -288,37 +292,37 @@ export class Home extends React.Component {
     this.setState({description: event.target.value})
   }
 
+  mailing() {
+      this.setState({mailing: !this.state.mailing})
+  }
+
 
   handleValidSubmit(event, values) {
+    this.mailing();
+    var self = this;
     const data = new FormData(event.target);
-    // NOTE: you access FormData fields with `data.get(fieldName)`
     const formData = new FormData();
         formData.append( 'image', this.state.file );
         formData.append( 'name', values.name );
         formData.append( 'email', values.email );
         formData.append( 'description', this.state.description);
-    axios.post('/contact-form',
+        axios.post('/contact-form',
         formData
       )
       .then(function (response) {
-        //this.setState({ modal: !this.state.modal });
-        swal("Message Sended!", "I will return to you as soon as possible.", "success");
         console.log(response);
+        self.setState({mailing: !self.state.mailing})
+        swal("Message Sended!", "I will return to you as soon as possible.", "success");
       })
       .catch(function (error) {
-        swal("Message Not Sended!", "There are an error! Please try again!", "error");
         console.log(error);
-
-      });
-
-
-
-
+        self.setState({mailing: !self.state.mailing})
+        swal("Message Not Sended!", "There are an error! Please try again!", "error");
+      })
   }
 
   handleInvalidSubmit(event, errors, values) {
-    alert("YANLİS");
-    this.setState({email: values.email, error: true});
+    this.setState({email: values.email, error: true, mailing:false});
   }
 
   render() {
@@ -336,10 +340,10 @@ export class Home extends React.Component {
             <SocialIconsDiv>
               <Row>
                 <StyledSocialIconsCol>
-                <StyledA href="https://github.com/hayreddintuzel"><i className="fab fa-github"></i></StyledA>
-                <StyledA href="https://twitter.com/devneeddev"><i className="fab fa-twitter"></i></StyledA>
-                <StyledA href="https://www.instagram.com/devneeddev/"><i className="fab fa-instagram"></i></StyledA>
-                <StyledA href="https://www.linkedin.com/in/hayreddin-tüzel-58a759125"><i className="fab fa-linkedin"></i></StyledA>
+                <StyledA target="_blank" href="https://github.com/hayreddintuzel"><i className="fab fa-github"></i></StyledA>
+                <StyledA target="_blank" href="https://twitter.com/devneeddev"><i className="fab fa-twitter"></i></StyledA>
+                <StyledA target="_blank" href="https://www.instagram.com/devneeddev/"><i className="fab fa-instagram"></i></StyledA>
+                <StyledA target="_blank" href="https://www.linkedin.com/in/hayreddin-tüzel-58a759125"><i className="fab fa-linkedin"></i></StyledA>
                 </StyledSocialIconsCol>
               </Row>
             </SocialIconsDiv>
@@ -395,7 +399,7 @@ export class Home extends React.Component {
           <Label for="exampleFile">File</Label>
           <Input type="file" name="file" id="exampleFile" onChange={this.fileChangedHandler}/>
           <FormText color="muted">
-          If your file is over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
+          * Only .pdf, .docx, .doc files.  If your file is is different format or over 2MB in size, you can send your file to hayreddintuzel@gmail.com.
           </FormText>
         </FormGroup>
         <FormGroup>
@@ -404,7 +408,14 @@ export class Home extends React.Component {
         </FormGroup>
       </ModalBody>
       <ModalFooter>
+        <LoadingScreen
+        loading={this.state.mailing}
+        bgColor='#f1f1f1'
+        spinnerColor='#9ee5f8'
+        textColor='#676767'
+        >
         <Button color="primary">Send</Button>{' '}
+        </LoadingScreen>
         <Button color="secondary" onClick={this.toggle}>Cancel</Button>
       </ModalFooter>
       </AvForm>

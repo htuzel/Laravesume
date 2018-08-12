@@ -277,167 +277,167 @@ export function Resume () {
             <Row>
                 <CardCol>
                   <StyledH3>Other Skills</StyledH3>
-                  <div class="field is-grouped is-grouped-multiline" style={{ paddingLeft:"55px", marginBottom:"55px" }}>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Bootstrap 4</span>
-                        <span class="tag is-light">Css</span>
+                  <div className="field is-grouped is-grouped-multiline" style={{ paddingLeft:"55px", marginBottom:"55px" }}>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Bootstrap 4</span>
+                        <span className="tag is-light">Css</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Opentok.js</span>
-                        <span class="tag is-light">Video Streaming</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Opentok.js</span>
+                        <span className="tag is-light">Video Streaming</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Moment.js</span>
-                        <span class="tag is-light">Javascript</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Moment.js</span>
+                        <span className="tag is-light">Javascript</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Font Awesome</span>
-                        <span class="tag is-light">Icons</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Font Awesome</span>
+                        <span className="tag is-light">Icons</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Balsamiq 3</span>
-                        <span class="tag is-light">Wireframe</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Balsamiq 3</span>
+                        <span className="tag is-light">Wireframe</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">animate.css</span>
-                        <span class="tag is-light">Css</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">animate.css</span>
+                        <span className="tag is-light">Css</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Linux Terminal</span>
-                        <span class="tag is-light">OS</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Linux Terminal</span>
+                        <span className="tag is-light">OS</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Material UI</span>
-                        <span class="tag is-light">React.js</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Material UI</span>
+                        <span className="tag is-light">React.js</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">ReactStrap</span>
-                        <span class="tag is-light">React.js</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">ReactStrap</span>
+                        <span className="tag is-light">React.js</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Semanthic UI</span>
-                        <span class="tag is-light">React.js</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Semanthic UI</span>
+                        <span className="tag is-light">React.js</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Laravel Forge</span>
-                        <span class="tag is-light">Hosting</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Laravel Forge</span>
+                        <span className="tag is-light">Hosting</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Bulma.io</span>
-                        <span class="tag is-light">Css</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Bulma.io</span>
+                        <span className="tag is-light">Css</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">AOS</span>
-                        <span class="tag is-light">Scroll Animations</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">AOS</span>
+                        <span className="tag is-light">Scroll Animations</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">popper.js</span>
-                        <span class="tag is-light">Javascript</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">popper.js</span>
+                        <span className="tag is-light">Javascript</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">chart.js</span>
-                        <span class="tag is-light">Charts</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">chart.js</span>
+                        <span className="tag is-light">Charts</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Node.js</span>
-                        <span class="tag is-light">Javascript</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Node.js</span>
+                        <span className="tag is-light">Javascript</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Photoshop</span>
-                        <span class="tag is-light">Design</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Photoshop</span>
+                        <span className="tag is-light">Design</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Owl Carousel</span>
-                        <span class="tag is-light">Sliders</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Owl Carousel</span>
+                        <span className="tag is-light">Sliders</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Styled Components</span>
-                        <span class="tag is-light">React.js</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Styled Components</span>
+                        <span className="tag is-light">React.js</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">CSS Modules</span>
-                        <span class="tag is-light">Css</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">CSS Modules</span>
+                        <span className="tag is-light">Css</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">English</span>
-                        <span class="tag is-light">Language</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">English</span>
+                        <span className="tag is-light">Language</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">jQuery UI</span>
-                        <span class="tag is-light">jQuery</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">jQuery UI</span>
+                        <span className="tag is-light">jQuery</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">SEO</span>
-                        <span class="tag is-light">HTML</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">SEO</span>
+                        <span className="tag is-light">HTML</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Iyzico PHP</span>
-                        <span class="tag is-light">E-payment</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Iyzico PHP</span>
+                        <span className="tag is-light">E-payment</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Localization</span>
-                        <span class="tag is-light">Translate</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Localization</span>
+                        <span className="tag is-light">Translate</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Wordpress</span>
-                        <span class="tag is-light">PHP</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Wordpress</span>
+                        <span className="tag is-light">PHP</span>
                       </div>
                     </div>
-                    <div class="control">
-                      <div class="tags has-addons">
-                        <span class="tag is-dark">Composer</span>
-                        <span class="tag is-light">PHP</span>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Composer</span>
+                        <span className="tag is-light">PHP</span>
                       </div>
                     </div>
                   </div>

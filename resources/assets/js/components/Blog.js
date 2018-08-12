@@ -82,7 +82,7 @@ export function Blog() {
             </StyledCardTop>
             <Row style={{ paddingRight:"20px" }}>
             <CardCol xs="12" sm="12" md="6">
-              <time datetime="2014-09-20" class="icon">
+              <time datetime="2014-09-20" className="icon">
                 <em>2018</em>
                 <strong>July</strong>
                 <span style={{ paddingTop:"15px" }}>10</span>

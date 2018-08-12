@@ -32,6 +32,7 @@
         "styled-components": "^3.3.3"
     },
     "dependencies": {
-        "availity-reactstrap-validation": "^2.0.4"
+        "availity-reactstrap-validation": "^2.0.4",
+        "react-loading-screen": "0.0.17"
     }
 }

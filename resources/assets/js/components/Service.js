@@ -412,36 +412,36 @@ export class Service extends React.Component {
         </Modal>
 
         <Modal isOpen={this.state.modal1} toggle={this.toggle1} className={this.props.className}  style={{  marginTop:"10%" }}>
-            <ModalHeader toggle={this.toggle1}>Contact Form</ModalHeader>
+            <ModalHeader toggle={this.toggle1}>How Do I Serve You?</ModalHeader>
             <ModalBody>
-                <article>
+                <article style={{  padding:"15px" }}>
                     First of all I listen carefully to your needs. Turn your needs into projects and present them to you. Then I draw the wireframes of the web site to be made through profesional drawing programs. I will continue to update the wireframes until you are satisfied. Finally, I deliver the site design to you as an illustrator file or HTML / Javascript code.
                 </article>
             </ModalBody>
         </Modal>
 
         <Modal isOpen={this.state.modal2} toggle={this.toggle2} className={this.props.className}  style={{  marginTop:"10%" }}>
-            <ModalHeader toggle={this.toggle2}>Contact Form</ModalHeader>
+            <ModalHeader toggle={this.toggle2}>How Do I Serve You?</ModalHeader>
             <ModalBody>
-                <article>
+                <article style={{  padding:"15px" }}>
                     First of all I listen carefully to your needs. I analyze your needs. Turn your needs into projects and present them to you. Then I draw the wireframes of the web site to be made through profesional drawing programs. I will continue to update the wireframes until you are satisfied. Finally, I deploy the project to the server you want. I will carry out project maintenance and repair work free of charge for the next 3 months.
                 </article>
             </ModalBody>
         </Modal>
 
         <Modal isOpen={this.state.modal3} toggle={this.toggle3} className={this.props.className}  style={{  marginTop:"10%" }}>
-            <ModalHeader toggle={this.toggle3}>Contact Form</ModalHeader>
+            <ModalHeader toggle={this.toggle3}>How Do I Serve You?</ModalHeader>
             <ModalBody>
-                <article>
+                <article style={{  padding:"15px" }}>
                     I can work with you in 3 different ways. First, I can give SEO consultancy service or I can train you about SEO. Secondly, I can do your site's SEO analysis and give you specific SEO advices for your site. Third, I can run all your SEO business and I can provide content, advertising and link support to you or your organization.
                 </article>
             </ModalBody>
         </Modal>
 
         <Modal isOpen={this.state.modal4} toggle={this.toggle4} className={this.props.className}  style={{  marginTop:"10%" }}>
-            <ModalHeader toggle={this.toggle4}>Contact Form</ModalHeader>
+            <ModalHeader toggle={this.toggle4}>How Do I Serve You?</ModalHeader>
             <ModalBody>
-                <article>
+                <article style={{  padding:"15px" }}>
                     We can work with you on digital marketing in two different ways. First, I can advise you or your organization about digital marketing (Google Adwords, Google Analytics, Google Tags, Social Media ads) and I can train you or your organization about these topics. Secondly, I can analyze your datas with Google Analytics and, I can run social media and Google Adwords ad campaigns on your behalf.
                 </article>
             </ModalBody>
