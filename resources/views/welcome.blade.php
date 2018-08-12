@@ -21,6 +21,10 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- SEO -->
+    <meta name="description" content="It includes the resume and freelance works of Hayreddin Tüzel. You can also contact Hayreddin Tüzel via this website.  Hayreddin Tüzel serves in Web design, Web programming, SEO and digital marketing.">
+    <meta name="keywords" content="Hayreddin Tüzel, Freelance, Freelance Web Developer, Developer, PHP, Laravel, Reactjs, Javascript, Web Design, SEO, Digital Marketing">
+    <meta name="author" content="Hayreddin Tüzel">
 
 
 
@@ -33,7 +37,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Hayreddin Tüzel's Website</title>
   </head>
   <body>
     <noscript>
