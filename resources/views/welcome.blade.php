@@ -44,6 +44,7 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -55,6 +56,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="{{mix('js/app.js')}}" ></script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"c0cea04b11d01b6101b4f424b","lid":"c3f4c86000"}) })</script>
   </body>
 
 </html>
