@@ -39,6 +39,19 @@
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"c0cea04b11d01b6101b4f424b","lid":"c3f4c86000"}) })</script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104615836-2"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://hayreddintuzel.com",
+          "@type": "Personal",
+          "url": "http://www.hayreddintuzel.com",
+          "name": "Hayreddin Tuzel",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90-531-790-88-74",
+            "contactType": "Personal"
+          }
+        }
+        </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
