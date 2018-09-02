@@ -120,15 +120,15 @@ export function Blog() {
             <CardCol xs="12" sm="12" md="6">
               <time datetime="2014-09-20" className="icon">
                 <em>2018</em>
-                <strong>July</strong>
-                <span style={{ paddingTop:"15px" }}>10</span>
+                <strong>September</strong>
+                <span style={{ paddingTop:"15px" }}>02</span>
               </time>
               <Card>
                 <NonStyledA href="https://medium.com/@hayreddintuzel/basit-kod-yazmak-i%C3%A7in-basit-kurallar-rehberi-d2bcc3938a6b" target="_blank">
                 <CardImg top width="100%" src={simple} alt="Simple Coding" />
                 <CardBody style={{ textAlign:"center" }}>
                   <CardTitle>Coding</CardTitle>
-                  <CardSubtitle>Basit kod yazmak için basit kurallar rehberi (Turkish)</CardSubtitle>
+                  <CardSubtitle>Basit Kod Yazmak İçin Basit Kurallar Rehberi (Turkish)</CardSubtitle>
                 </CardBody>
                 </NonStyledA>
               </Card>
