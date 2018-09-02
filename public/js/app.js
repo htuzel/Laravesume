@@ -106335,52 +106335,52 @@ function Blog() {
               )
             )
           )
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["Row"],
-        { style: { paddingRight: "20px" } },
+        ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          CardCol,
-          { xs: '12', sm: '12', md: '6' },
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["Row"],
+          { style: { paddingRight: "20px" } },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'time',
-            { datetime: '2014-09-20', className: 'icon' },
+            CardCol,
+            { xs: '12', sm: '12', md: '6' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'em',
-              null,
-              '2018'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'strong',
-              null,
-              'September'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              { style: { paddingTop: "15px" } },
-              '02'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["Card"],
-            null,
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              NonStyledA,
-              { href: 'https://medium.com/@hayreddintuzel/basit-kod-yazmak-i%C3%A7in-basit-kurallar-rehberi-d2bcc3938a6b', target: '_blank' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardImg"], { top: true, width: '100%', src: __WEBPACK_IMPORTED_MODULE_6__images_simple_jpg___default.a, alt: 'Simple Coding' }),
+              'time',
+              { datetime: '2014-09-20', className: 'icon' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardBody"],
-                { style: { textAlign: "center" } },
+                'em',
+                null,
+                '2018'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'strong',
+                null,
+                'September'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { style: { paddingTop: "15px" } },
+                '02'
+              )
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["Card"],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                NonStyledA,
+                { href: 'https://medium.com/@hayreddintuzel/basit-kod-yazmak-i%C3%A7in-basit-kurallar-rehberi-d2bcc3938a6b', target: '_blank' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardImg"], { top: true, width: '100%', src: __WEBPACK_IMPORTED_MODULE_6__images_simple_jpg___default.a, alt: 'Simple Coding' }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardTitle"],
-                  null,
-                  'Coding'
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardSubtitle"],
-                  null,
-                  'Basit Kod Yazmak \u0130\xE7in Basit Kurallar Rehberi (Turkish)'
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardBody"],
+                  { style: { textAlign: "center" } },
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardTitle"],
+                    null,
+                    'Coding'
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["CardSubtitle"],
+                    null,
+                    'Basit Kod Yazmak \u0130\xE7in Basit Kurallar Rehberi (Turkish)'
+                  )
                 )
               )
             )

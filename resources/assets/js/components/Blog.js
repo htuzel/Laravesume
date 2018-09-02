@@ -115,8 +115,7 @@ export function Blog() {
               </Card>
               </CardCol>
             </Row>
-          </Card>
-          <Row style={{ paddingRight:"20px" }}>
+            <Row style={{ paddingRight:"20px" }}>
             <CardCol xs="12" sm="12" md="6">
               <time datetime="2014-09-20" className="icon">
                 <em>2018</em>
@@ -134,6 +133,7 @@ export function Blog() {
               </Card>
               </CardCol>
             </Row>
+          </Card>
         </Container>
       </Animated>
   );
