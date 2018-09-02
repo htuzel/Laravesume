@@ -8,6 +8,7 @@ import {Animated} from "react-animated-css";
 //images
 import background from '../images/background.jpg';
 import laravel from '../images/laravel.png';
+import simple from '../images/simple.jpg'
 
 //inline styles
 const styles = {
@@ -89,7 +90,7 @@ export function Blog() {
               </time>
               <Card>
                 <NonStyledA href="https://medium.com/@hayreddintuzel/how-to-learn-laravel-a-roadmap-from-beginner-to-advanced-5414640362e8" target="_blank">
-                <CardImg top width="100%" src={laravel} alt="Card image cap" />
+                <CardImg top width="100%" src={laravel} alt="Laravel" />
                 <CardBody style={{ textAlign:"center" }}>
                   <CardTitle>Laravel</CardTitle>
                   <CardSubtitle>How to Learn Laravel— A roadmap from beginner to advanced</CardSubtitle>
@@ -105,7 +106,7 @@ export function Blog() {
               </time>
               <Card>
                 <NonStyledA href="https://medium.com/@hayreddintuzel/connecting-laravel-forge-using-heidisql-via-ssh-206febea714f" target="_blank">
-                <CardImg top width="100%" src={laravel} alt="Card image cap" />
+                <CardImg top width="100%" src={laravel} alt="Laravel" />
                 <CardBody style={{ textAlign:"center" }}>
                   <CardTitle>Laravel</CardTitle>
                   <CardSubtitle>Connecting Laravel Forge Using HeidiSQL via SSH</CardSubtitle>
@@ -115,6 +116,24 @@ export function Blog() {
               </CardCol>
             </Row>
           </Card>
+          <Row style={{ paddingRight:"20px" }}>
+            <CardCol xs="12" sm="12" md="6">
+              <time datetime="2014-09-20" className="icon">
+                <em>2018</em>
+                <strong>July</strong>
+                <span style={{ paddingTop:"15px" }}>10</span>
+              </time>
+              <Card>
+                <NonStyledA href="https://medium.com/@hayreddintuzel/basit-kod-yazmak-i%C3%A7in-basit-kurallar-rehberi-d2bcc3938a6b" target="_blank">
+                <CardImg top width="100%" src={simple} alt="Simple Coding" />
+                <CardBody style={{ textAlign:"center" }}>
+                  <CardTitle>Coding</CardTitle>
+                  <CardSubtitle>Basit kod yazmak için basit kurallar rehberi (Turkish)</CardSubtitle>
+                </CardBody>
+                </NonStyledA>
+              </Card>
+              </CardCol>
+            </Row>
         </Container>
       </Animated>
   );
