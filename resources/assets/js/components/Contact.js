@@ -222,7 +222,7 @@ export class Contact extends React.Component {
                   <ContactItemValue>+90 531 790 88 74</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
-                  <ContactItemIcon><StyledA href="https://goo.gl/maps/ob23pSAaMTK2" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
+                  <ContactItemIcon><StyledA href="https://goo.gl/maps/gBbRf2Z4dCy" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
                   <ContactItemKey>Adress</ContactItemKey><ContactItemValue>İzmir / Turkey</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>

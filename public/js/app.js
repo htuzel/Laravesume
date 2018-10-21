@@ -90858,7 +90858,7 @@ var Home = function (_React$Component) {
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         StyledA,
-                        { target: '_blank', href: 'https://www.instagram.com/devneeddev/' },
+                        { target: '_blank', href: 'https://www.instagram.com/hayreddintuzel/' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fab fa-instagram' })
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -107478,7 +107478,7 @@ var Contact = function (_React$Component) {
                       null,
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         StyledA,
-                        { href: 'https://goo.gl/maps/ob23pSAaMTK2', target: '_blank' },
+                        { href: 'https://goo.gl/maps/gBbRf2Z4dCy', target: '_blank' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-map-marked' })
                       )
                     ),

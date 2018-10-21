@@ -342,7 +342,7 @@ export class Home extends React.Component {
                 <StyledSocialIconsCol>
                 <StyledA target="_blank" href="https://github.com/hayreddintuzel"><i className="fab fa-github"></i></StyledA>
                 <StyledA target="_blank" href="https://twitter.com/devneeddev"><i className="fab fa-twitter"></i></StyledA>
-                <StyledA target="_blank" href="https://www.instagram.com/devneeddev/"><i className="fab fa-instagram"></i></StyledA>
+                <StyledA target="_blank" href="https://www.instagram.com/hayreddintuzel/"><i className="fab fa-instagram"></i></StyledA>
                 <StyledA target="_blank" href="https://www.linkedin.com/in/hayreddin-tüzel-58a759125"><i className="fab fa-linkedin"></i></StyledA>
                 </StyledSocialIconsCol>
               </Row>
