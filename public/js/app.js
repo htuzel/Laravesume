@@ -90858,7 +90858,7 @@ var Home = function (_React$Component) {
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         StyledA,
-                        { target: '_blank', href: 'https://www.instagram.com/hayreddintuzel/' },
+                        { target: '_blank', href: 'https://www.instagram.com/hayreddin.tuzel/' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fab fa-instagram' })
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
