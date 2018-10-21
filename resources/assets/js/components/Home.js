@@ -357,9 +357,10 @@ export class Home extends React.Component {
                 <ul style={{ paddingLeft:"10px"}}>
                   <li> <i className="fas fa-bookmark"></i> A website developed for a national conference organized by the Navy,</li>
                   <li> <i className="fas fa-bookmark"></i> A comprehensive website for Renee Hobbs, a highly respected professor in his field, </li>
-                  <li> <i className="fas fa-bookmark"></i> Lastly, I have been worked as a team leader in the development of a very comprehensive and high-budget LMS system with video streaming. </li>
+                  <li> <i className="fas fa-bookmark"></i> I have been worked as a team leader in the development of a very comprehensive and high-budget LMS system with video streaming,</li>
+                  <li> <i className="fas fa-bookmark"></i> Lastly, I build a project management system for an academic counseling agency</li>
                 </ul>
-                  Now, I am  planing to develop web products for global marketing aimed to CMS users. Also, I always open to challenges to improve myself.
+                  Now, I am working on Salesforce Commerce Cloud. Also, In my free time I have been working to bring a different perspective to elearning and LMS systems.
               </StyledCardText>
               <DownloadButton><NonStyledA href="hayreddintuzelcv.pdf" download>Download Resume</NonStyledA></DownloadButton>
             </CardCol>
@@ -377,7 +378,7 @@ export class Home extends React.Component {
                 </li>
                 <li style={{ listStyleType: "none" }}>
                   <ContactItemIcon><StyledA href="https://goo.gl/maps/ob23pSAaMTK2" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
-                  <ContactItemKey>Adress</ContactItemKey><ContactItemValue>Çanakkale / Turkey</ContactItemValue>
+                  <ContactItemKey>Adress</ContactItemKey><ContactItemValue>İzmir / Turkey</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
                   <ContactItemIcon><StyledA onClick={this.toggle}><i className="far fa-handshake"></i></StyledA></ContactItemIcon>

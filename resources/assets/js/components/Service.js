@@ -17,7 +17,7 @@ import turacoon from '../images/turacoon.svg';
 import createtolearn from '../images/createtolearn.svg';
 import here from '../images/here.svg';
 import motivation from '../images/motivation.png';
-
+import besteditproof from '../images/besteditproof.png';
 import wantYou from '../images/wantYou.svg';
 
 //inline styles
@@ -360,6 +360,15 @@ export class Service extends React.Component {
                 </NonStyledA>
               </CardCol>
               <CardCol xs="6" sm="4" md="2" >
+                <NonStyledA  href="https://www.besteditproof.com" target="_blank">
+                    <ClientCard>
+                      <ClientImageContainer>
+                        <img src={ besteditproof } alt="Best Edit Proof"/>
+                      </ClientImageContainer>
+                    </ClientCard>
+                </NonStyledA>
+              </CardCol>
+              <CardCol xs="6" sm="4" md="2" >
                 <NonStyledA  href="https://www.hayreddintuzel.com" target="_blank">
                     <ClientCard>
                       <ClientImageContainer>
@@ -367,13 +376,6 @@ export class Service extends React.Component {
                       </ClientImageContainer>
                     </ClientCard>
                 </NonStyledA>
-              </CardCol>
-              <CardCol xs="6" sm="4" md="2" >
-                <ClientCard onClick={this.toggle5}>
-                  <ClientImageContainer>
-                    <img src={ wantYou } alt="Hire me"/>
-                  </ClientImageContainer>
-                </ClientCard>
               </CardCol>
               <CardCol xs="6" sm="4" md="2" >
                 <ClientCard onClick={this.toggle5}>

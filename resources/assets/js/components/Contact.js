@@ -223,7 +223,7 @@ export class Contact extends React.Component {
                 </li>
                 <li style={{ listStyleType: "none" }}>
                   <ContactItemIcon><StyledA href="https://goo.gl/maps/ob23pSAaMTK2" target="_blank" ><i className="fas fa-map-marked"></i></StyledA></ContactItemIcon>
-                  <ContactItemKey>Adress</ContactItemKey><ContactItemValue>Çanakkale / Turkey</ContactItemValue>
+                  <ContactItemKey>Adress</ContactItemKey><ContactItemValue>İzmir / Turkey</ContactItemValue>
                 </li>
                 <li style={{ listStyleType: "none" }}>
                   <ContactItemIcon><StyledA onClick={this.toggle}><i className="far fa-handshake"></i></StyledA></ContactItemIcon>

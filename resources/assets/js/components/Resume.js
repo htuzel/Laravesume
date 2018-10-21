@@ -440,6 +440,18 @@ export function Resume () {
                         <span className="tag is-light">PHP</span>
                       </div>
                     </div>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">Salesforce CC</span>
+                        <span className="tag is-light">E-commerce</span>
+                      </div>
+                    </div>
+                    <div className="control">
+                      <div className="tags has-addons">
+                        <span className="tag is-dark">H5P</span>
+                        <span className="tag is-light">E-learning</span>
+                      </div>
+                    </div>
                   </div>
                 </CardCol>
               </Row>
