@@ -360,7 +360,7 @@ export class Home extends React.Component {
                   <li> <i className="fas fa-bookmark"></i> I have been worked as a team leader in the development of a very comprehensive and high-budget LMS system with video streaming,</li>
                   <li> <i className="fas fa-bookmark"></i> Lastly, I build a project management system for an academic counseling agency</li>
                 </ul>
-                  Now, I am working on Salesforce Commerce Cloud. Also, In my free time I have been working to bring a different perspective to elearning and LMS systems.
+                  Now, I am working on Salesforce Commerce Cloud. I became a certified SFCC B2C developer within a short time. Also, In my free time I have been working to bring a different perspective to elearning and LMS systems.
               </StyledCardText>
               <DownloadButton><NonStyledA href="hayreddintuzelcv.pdf" download>Download Resume</NonStyledA></DownloadButton>
             </CardCol>

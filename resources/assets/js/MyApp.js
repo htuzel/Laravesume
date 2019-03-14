@@ -59,9 +59,10 @@ class MyApp extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </Container>
-            <Container style={{ marginTop:"5px", marginBottom:"55px", marginLeft:"50px"}}>
-                <small style={{ color:"gray" }}>Created with <a href="https://reactjs.org/" target="_blank" style={{ color:"blue" }}>React.js</a> by <span style={{ color:"black" }}>Hayreddin Tüzel</span></small>
+            <Container style={{ marginTop:"5px", marginBottom:"95px", marginLeft:"50px"}}>
+                <small style={{ color:"gray" }}>Created with <a href="https://reactjs.org/" target="_blank" style={{ color:"pink" }}>React.js</a> by <span style={{ color:"black" }}>Hayreddin Tüzel</span></small>
             </Container>
+            <small style={{ color:"gray", position:"absolute", bottom:'1px', right:'50px'}}>Last Update: 14 March 2019</small>
         </Container>
       </Router>
     );

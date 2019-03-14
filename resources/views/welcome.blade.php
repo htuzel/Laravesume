@@ -58,6 +58,18 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-104615836-2');
+      var forEach = function (array, callback, scope) {
+	for (var i = 0; i < array.length; i++) {
+		callback.call(scope, i, array[i]);
+	}
+};
+
+var menuItems = document.querySelectorAll('.luxbar-item');
+forEach(menuItems, function (index, item) {
+	item.addEventListener('click', function () {
+		document.querySelector('#luxbar-checkbox').checked = false;
+	});
+});
     </script>
 
 </body>

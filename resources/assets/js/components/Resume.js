@@ -217,8 +217,8 @@ export function Resume () {
                     </IconContainer>
                     <SmalHr/>
                     <ExpContainer>
-                      <h5>Interpretership (2017)</h5>
-                      <small>I have been an interpreter for the articles on the website “onurtestsurusunde.com”. I have translated the articles given by my employer from English to Turkish. I worked for about 6 months in this business.</small>
+                      <h5>Freelance Web Developer (2017 - 2018)</h5>
+                      <small>I have been working as a web developer since the beginning of 2017. I am practicing my studies together with my freelancer team. I use Laravel Framework and Wordpress as a technology. I lead my team in the back-end and front-end.</small>
                     </ExpContainer>
                   </div>
                 </TimeLineContainer>
@@ -231,8 +231,8 @@ export function Resume () {
                     </IconContainer>
                     <SmalHr/>
                     <ExpContainer>
-                      <h5>Freelance Web Developer (2017 - Now)</h5>
-                      <small>I have been working as a web developer since the beginning of 2017. I am practicing my studies together with my freelancer team. I use Laravel Framework and Wordpress as a technology. I lead my team in the back-end and front-end.</small>
+                      <h5>Salesforce Commerce Clooud Backend Developer at OSF Global Services (2018 - )</h5>
+                      <small>Since 2018 I have been working as a certified SFCC B2C Backend Developer at OSF Global Services. I believe discovering this great platform is a very important experience.</small>
                     </ExpContainer>
                   </div>
                 </TimeLineContainer>
@@ -243,12 +243,16 @@ export function Resume () {
               <Row style={{ marginBottom:"20px" }}>
                 <CardCol xs="12" sm="12" md="6">
                   <StyledH3>Coding Languages/<span style={{ color:"gray" }}>Frameworks</span></StyledH3>
+                  <StyledH4>Javascript</StyledH4>
+                  <StyledProgress color="secondary" value="98" />
+                  <StyledH4 style={{ color:"gray" }}>Node.js</StyledH4>
+                  <StyledProgress color="secondary" value="90" />
+                  <StyledH4 style={{ color:"gray" }}>SFCC B2C</StyledH4>
+                  <StyledProgress color="secondary" value="90" />
                   <StyledH4>PHP</StyledH4>
                   <StyledProgress color="secondary" value="99" />
                   <StyledH4 style={{ color:"gray" }}>Laravel 5</StyledH4>
                   <StyledProgress color="secondary" value="99" />
-                  <StyledH4>Javascript</StyledH4>
-                  <StyledProgress color="secondary" value="98" />
                   <StyledH4 style={{ color:"gray" }}>JQuery</StyledH4>
                   <StyledProgress color="secondary" value="98" />
                   <StyledH4 style={{ color:"gray" }}>React.js</StyledH4>
@@ -260,16 +264,16 @@ export function Resume () {
                   <StyledH3>Tools</StyledH3>
                   <StyledH4>Git with GitHub/GitLab</StyledH4>
                   <StyledProgress color="secondary" value="100" />
-                  <StyledH4>Npm</StyledH4>
+                  <StyledH4>Npm/Yarn</StyledH4>
+                  <StyledProgress color="secondary" value="100" />
+                  <StyledH4>Agile Development</StyledH4>
                   <StyledProgress color="secondary" value="100" />
                   <StyledH4>Illustrator</StyledH4>
                   <StyledProgress color="secondary" value="95" />
-                  <StyledH4>Analytics/Adwords</StyledH4>
-                  <StyledProgress color="secondary" value="90" />
                   <StyledH4>Webpack/Gulp.js</StyledH4>
-                  <StyledProgress color="secondary" value="80" />
+                  <StyledProgress color="secondary" value="70" />
                   <StyledH4>Testing</StyledH4>
-                  <StyledProgress color="secondary" value="80" />
+                  <StyledProgress color="secondary" value="70" />
                 </CardCol>
               </Row>
             </ScrollAnimation>
@@ -370,8 +374,8 @@ export function Resume () {
                     </div>
                     <div className="control">
                       <div className="tags has-addons">
-                        <span className="tag is-dark">Node.js</span>
-                        <span className="tag is-light">Javascript</span>
+                        <span className="tag is-dark">Docker</span>
+                        <span className="tag is-light">CI</span>
                       </div>
                     </div>
                     <div className="control">
@@ -442,8 +446,8 @@ export function Resume () {
                     </div>
                     <div className="control">
                       <div className="tags has-addons">
-                        <span className="tag is-dark">Salesforce CC</span>
-                        <span className="tag is-light">E-commerce</span>
+                        <span className="tag is-dark">Redux</span>
+                        <span className="tag is-light">React.js</span>
                       </div>
                     </div>
                     <div className="control">
